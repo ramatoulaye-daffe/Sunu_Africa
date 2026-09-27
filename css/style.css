@@ -790,6 +790,328 @@ header {
     line-height: 1.7;
     font-size: 14px;
 }
+
+/* ================ PAGE CULTURE ================ */
+.culture-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    position: relative;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("../images/culture/culture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.culture-hero-content {
+    max-width: 750px;
+    color: var(--blanc);
+}
+.culture-hero-content span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--or);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.culture-hero-content h1 {
+    margin-bottom: 25px;
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.05;
+}
+.culture-hero-content p {
+    max-width: 650px;
+    color: #eeeeee;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.culture-intro {
+    padding: 100px 6%;
+    background-color: var(--blanc);
+}
+.culture-intro-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.culture-intro-image {
+    height: 550px;
+    overflow: hidden;
+}
+.culture-intro-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.culture-intro-image:hover img {
+    transform: scale(1.04);
+}
+.culture-intro-content {
+    max-width: 550px;
+}
+.culture-intro-content span {
+    color: var(--terre);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.culture-intro-content h2 {
+    margin: 18px 0 25px;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.15;
+}
+.culture-intro-content p {
+    margin-bottom: 18px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.culture-expressions {
+    padding: 100px 6%;
+    background-color: var(--beige);
+}
+.culture-expressions .section-title {
+    max-width: 800px;
+}
+.culture-expressions .section-title p {
+    margin-top: 20px;
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.culture-expressions-container {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.culture-expression-card {
+    background-color: var(--blanc);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.culture-expression-card:hover {
+    transform: translateY(-8px);
+}
+.culture-expression-image {
+    height: 300px;
+    overflow: hidden;
+}
+.culture-expression-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.culture-expression-card:hover
+.culture-expression-image img {
+    transform: scale(1.06);
+}
+.culture-expression-content {
+    padding: 30px;
+}
+.culture-expression-content > span {
+    color: var(--terre);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.culture-expression-content h3 {
+    margin: 12px 0 15px;
+    font-size: 28px;
+}
+.culture-expression-content p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.culture-expression-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--noir);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.culture-expression-content a:hover {
+    color: var(--terre);
+    gap: 14px;
+}
+
+.culture-detail {
+    padding: 100px 6%;
+    background-color: var(--blanc);
+}
+.culture-detail-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.culture-detail-image {
+    height: 550px;
+    overflow: hidden;
+}
+.culture-detail-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.culture-detail-image:hover img {
+    transform: scale(1.04);
+}
+.culture-detail-content {
+    max-width: 550px;
+}
+.culture-detail-content > span {
+    color: var(--terre);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.culture-detail-content h2 {
+    margin: 18px 0 25px;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.15;
+}
+.culture-detail-content p {
+    margin-bottom: 18px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.culture-detail-reverse
+.culture-detail-container
+.culture-detail-content {
+    order: 1;
+}
+.culture-detail-reverse
+.culture-detail-container
+.culture-detail-image {
+    order: 2;
+}
+
+.culture-divider {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 6%;
+    position: relative;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.50)
+        ),
+        url("../images/culture/musique.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.culture-divider-content {
+    max-width: 750px;
+    text-align: center;
+    color: var(--blanc);
+}
+.culture-divider-content span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--or);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.culture-divider-content h2 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.1;
+}
+
+.culture-conclusion {
+    padding: 100px 6%;
+    background-color: var(--beige);
+}
+.culture-conclusion-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.culture-conclusion-content {
+    max-width: 550px;
+}
+.culture-conclusion-content > span {
+    color: var(--terre);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.culture-conclusion-content h2 {
+    margin: 18px 0 25px;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.15;
+}
+.culture-conclusion-content p {
+    margin-bottom: 18px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.culture-conclusion-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.culture-conclusion-button:hover {
+    background-color: var(--terre);
+    gap: 14px;
+}
+.culture-conclusion-image {
+    height: 550px;
+    overflow: hidden;
+}
+.culture-conclusion-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.culture-conclusion-image:hover img {
+    transform: scale(1.04);
+}
+
+
+
 /* ============== PAGE CONTACT ================= */
 .contact {
     padding: 100px 6%;
@@ -1117,6 +1439,49 @@ header {
     .values-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .culture-intro-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .culture-intro-image {
+        height: 450px;
+    }
+    .culture-intro-content {
+        max-width: 100%;
+    }
+    .culture-detail-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .culture-detail-image {
+        height: 450px;
+    }
+    .culture-detail-content {
+        max-width: 100%;
+    }
+    .culture-expressions-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .culture-detail-reverse
+    .culture-detail-container
+    .culture-detail-content {
+        order: 1;
+    }
+    .culture-detail-reverse
+    .culture-detail-container
+    .culture-detail-image {
+        order: 2;
+    }
+    .culture-conclusion-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .culture-conclusion-content {
+        max-width: 100%;
+    }
+    .culture-conclusion-image {
+        height: 450px;
+    }
 
 
     .contact-container {
@@ -1201,9 +1566,74 @@ header {
     .about-divider-content h2 {
         font-size: 38px;
     }
+    .culture-hero {
+        min-height: 70vh;
+        padding: 60px 6%;
+    }
+    .culture-hero-content h1 {
+        font-size: 42px;
+    }
+    .culture-hero-content p {
+        font-size: 16px;
+    }
+    .culture-intro {
+        padding: 70px 6%;
+    }
+    .culture-intro-image {
+        height: 350px;
+    }
+    .culture-intro-content h2 {
+        font-size: 36px;
+    }
+    .culture-expressions {
+        padding: 70px 6%;
+    }
+    .culture-expressions-container {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+    .culture-expression-image {
+        height: 280px;
+    }
+    .culture-expression-content {
+        padding: 25px;
+    }
+    .culture-detail {
+        padding: 70px 6%;
+    }
+    .culture-detail-image {
+        height: 350px;
+    }
+    .culture-detail-content h2 {
+        font-size: 36px;
+    }
+    .culture-divider {
+        min-height: 350px;
+        background-attachment: scroll;
+    }
+    .culture-divider-content h2 {
+        font-size: 38px;
+    }
+    .culture-conclusion {
+        padding: 70px 6%;
+    }
+    .culture-conclusion-image {
+        height: 350px;
+    }
+    .culture-conclusion-content h2 {
+        font-size: 36px;
+    }
 
 
 
+
+
+
+
+
+
+
+    
     .contact-info h3 {
         font-size: 32px;
     }
